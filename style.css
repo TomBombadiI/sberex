@@ -1,3 +1,43 @@
-:root {
-    
+/* #region FONTS */
+
+@font-face {
+    font-family: 'SBSansDisplay';
+    src: url('./assets/fonts/sbsansdisplay-bold.eot');
+    src: url('./assets/fonts/sbsansdisplay-bold.eot?#iefix') format('embedded-opentype'), url('./assets/fonts/sbsansdisplay-bold.woff2') format('woff2'), url('./assets/fonts/sbsansdisplay-bold.woff') format('woff'), url('./assets/fonts/sbsansdisplay-bold.ttf') format('truetype'), url('./assets/fonts/sbsansdisplay-bold.svg#sbsansdisplay-bold') format('svg');
+    font-weight: 700;
 }
+
+@font-face {
+    font-family: 'SBSansDisplay';
+    src: url('./assets/fonts/sbsansdisplay-regular.eot');
+    src: url('./assets/fonts/sbsansdisplay-regular.eot?#iefix') format('embedded-opentype'), url('./assets/fonts/sbsansdisplay-regular.woff2') format('woff2'), url('./assets/fonts/sbsansdisplay-regular.woff') format('woff'), url('./assets/fonts/sbsansdisplay-regular.ttf') format('truetype'), url('./assets/fonts/sbsansdisplay-regular.svg#sbsansdisplay-regular') format('svg');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'SBSansText';
+    src: url('./assets/fonts/sbsanstext-medium.eot');
+    src: url('./assets/fonts/sbsanstext-medium.eot?#iefix') format('embedded-opentype'), url('./assets/fonts/sbsanstext-medium.woff2') format('woff2'), url('./assets/fonts/sbsanstext-medium.woff') format('woff'), url('./assets/fonts/sbsanstext-medium.ttf') format('truetype'), url('./assets/fonts/sbsanstext-medium.svg#sbsanstext-medium') format('svg')
+}
+
+/* #endregion FONTS */
+
+/* #region GLOBAL */
+
+:root {
+    --primary-color: #fff;
+    --secondary-color: #458F14;
+    --accent-color: #A0E720;
+
+    --bg-color: #000;
+    --gray-color: #22272B;
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: 'SBSansText', sans-serif;
+    color: var(--primary-color);
+}
+
+/* #endregion GLOBAL */
+
