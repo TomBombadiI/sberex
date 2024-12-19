@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,12 +8,255 @@
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <header class="header">
-        
+        <div class="header__inner container">
+            <div class="header__top">
+                <div class="header__logo">
+                    <img width="198px" height="40px" src="./assets/img/logo.png" alt="sberex">
+                </div>
+                <nav class="header__menu nav-menu">
+                    <ul class="nav-menu__list">
+                        <li>
+                            <a href="#">Главная</a>
+                        </li>
+                        <li>
+                            <a href="#currency">Курсы валют</a>
+                        </li>
+                        <li>
+                            <a href="#about">О нас</a>
+                        </li>
+                        <li>
+                            <a href="#benefits">Преимущества</a>
+                        </li>
+                        <li>
+                            <a href="#recomendations">Рекомендации</a>
+                        </li>
+                        <li>
+                            <a href="#important">Важно</a>
+                        </li>
+                    </ul>
+                    <button class="burger-open">
+                        <svg viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <line y1="0.5" x2="15" y2="0.5" stroke="white" />
+                            <line y1="4.5" x2="15" y2="4.5" stroke="white" />
+                            <line y1="8.5" x2="15" y2="8.5" stroke="white" />
+                        </svg>
+                    </button>
+                </nav>
+                <button class="burger-open">
+                    <svg viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <line y1="0.5" x2="15" y2="0.5" stroke="white" />
+                        <line y1="4.5" x2="15" y2="4.5" stroke="white" />
+                        <line y1="8.5" x2="15" y2="8.5" stroke="white" />
+                    </svg>
+                </button>
+            </div>
+            <div class="header__bottom">
+                <a class="header__social" href="#">
+                    <img width="39px" height="39px" src="./assets/img/tg.png" alt="telegram">
+                    <span>Telegram</span>
+                </a>
+                <a class="header__social" href="#">
+                    <img width="39px" height="39px" src="./assets/img/wa.png" alt="whatsapp">
+                    <span>WhatsApp</span>
+                </a>
+            </div>
+        </div>
     </header>
-    
+
+    <main class="main">
+        <section class="banner">
+            <div class="banner__inner container">
+                <div class="banner__title-wrapper info-block green-block">
+                    <h1 class="banner__title">
+                        ОБМЕННЫЕ ПУНКТЫ<br>
+                        НА ПХУКЕТЕ
+                    </h1>
+                    <h2 class="banner__subtitle">
+                        Безопасный и выгодный обмен валют
+                    </h2>
+                </div>
+                <div class="banner__calc calc info-block grey-block">
+                    <div class="calc__top calc-input">
+                        <div class="calc-input__sum">
+                            <span>Отдаю</span>
+                            <span class="sum">1 THB = 2.959 RUB</span>
+                        </div>
+                        <div class="calc-input__select-wrapper">
+                            <div class="select">
+                                <div class="option">
+                                    <span class="icon">
+                                        <img src="./assets/img/currency/thb.png" alt="thb">
+                                    </span>
+                                    <span class="currency">
+                                        thb
+                                    </span>
+                                    <span class="arrow-dropdown">
+                                        <svg width="14" height="8" viewBox="0 0 14 8" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <line x1="0.353553" y1="0.646447" x2="7.35355" y2="7.64645"
+                                                stroke="#458F14" />
+                                            <line x1="6.64645" y1="7.64645" x2="13.6464" y2="0.646447"
+                                                stroke="#458F14" />
+                                        </svg>
+                                    </span>
+                                </div>
+                                <ul class="select-list active" role="combobox">
+                                    <li class="calc-input__select-item option" role="option">
+                                        <span class="icon">
+                                            <img src="./assets/img/currency/usd.png" alt="usd">
+                                        </span>
+                                        <span class="currency">
+                                            usd
+                                        </span>
+                                    </li>
+                                    <li class="calc-input__select-item option" role="option">
+                                        <span class="icon">
+                                            <img src="./assets/img/currency/eur.png" alt="eur">
+                                        </span>
+                                        <span class="currency">
+                                            eur
+                                        </span>
+                                    </li>
+                                    <li class="calc-input__select-item option" role="option">
+                                        <span class="icon">
+                                            <img src="./assets/img/currency/try.png" alt="try">
+                                        </span>
+                                        <span class="currency">
+                                            try
+                                        </span>
+                                    </li>
+                                    <li class="calc-input__select-item option" role="option">
+                                        <span class="icon">
+                                            <img src="./assets/img/currency/cny.png" alt="cny">
+                                        </span>
+                                        <span class="currency">
+                                            cny
+                                        </span>
+                                    </li>
+                                    <li class="calc-input__select-item option" role="option">
+                                        <span class="icon">
+                                            <img src="./assets/img/currency/rub.png" alt="rub">
+                                        </span>
+                                        <span class="currency">
+                                            rub
+                                        </span>
+                                    </li>
+                                    <li class="calc-input__select-item option option-icon" role="option">
+                                        <span class="icon">
+                                            <img src="./assets/img/currency/sber.png" alt="sber">
+                                        </span>
+                                        <span class="currency">
+                                            sber
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <input type="text" class="calc-input__input" value="100 000">
+                        </div>
+                        <div class="calc-input__info">
+                            Обмен до 30.000 ₽ с карт банков РФ проходит по другому курсу.
+                        </div>
+                    </div>
+                    <button class="calc__middle">
+                        <svg width="25" height="15" viewBox="0 0 25 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 5.05554H20" stroke="#458F14" stroke-width="2" stroke-linecap="round" />
+                            <path d="M1 4.75494L8 2.00002" stroke="#458F14" stroke-width="2" stroke-linecap="round" />
+                            <path d="M24 10.1852H5" stroke="#458F14" stroke-width="2" stroke-linecap="round" />
+                            <path d="M23.9583 10.1852L17 13.3491" stroke="#458F14" stroke-width="2"
+                                stroke-linecap="round" />
+                        </svg>
+                    </button>
+                    <div class="calc__bottom calc-input">
+                        <div class="calc-input__sum">
+                            <span>Получаю</span>
+                            <span class="sum">1 THB = 2.959 RUB</span>
+                        </div>
+                        <div class="calc-input__select-wrapper">
+                            <div class="select">
+                                <div class="calc-input__select-item option" role="option">
+                                    <span class="icon">
+                                        <img src="./assets/img/currency/thb.png" alt="thb">
+                                    </span>
+                                    <span class="currency">
+                                        thb
+                                    </span>
+                                    <span class="arrow-dropdown">
+                                        <svg width="14" height="8" viewBox="0 0 14 8" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <line x1="0.353553" y1="0.646447" x2="7.35355" y2="7.64645"
+                                                stroke="#458F14" />
+                                            <line x1="6.64645" y1="7.64645" x2="13.6464" y2="0.646447"
+                                                stroke="#458F14" />
+                                        </svg>
+                                    </span>
+                                </div>
+                                <ul class="select-list active" role="combobox">
+                                    <li class="calc-input__select-item option">
+                                        <span class="icon">
+                                            <img src="./assets/img/currency/usd.png" alt="usd">
+                                        </span>
+                                        <span class="currency">
+                                            usd
+                                        </span>
+                                    </li>
+                                    <li class="calc-input__select-item option">
+                                        <span class="icon">
+                                            <img src="./assets/img/currency/eur.png" alt="eur">
+                                        </span>
+                                        <span class="currency">
+                                            eur
+                                        </span>
+                                    </li>
+                                    <li class="calc-input__select-item option">
+                                        <span class="icon">
+                                            <img src="./assets/img/currency/try.png" alt="try">
+                                        </span>
+                                        <span class="currency">
+                                            try
+                                        </span>
+                                    </li>
+                                    <li class="calc-input__select-item option">
+                                        <span class="icon">
+                                            <img src="./assets/img/currency/cny.png" alt="cny">
+                                        </span>
+                                        <span class="currency">
+                                            cny
+                                        </span>
+                                    </li>
+                                    <li class="calc-input__select-item option">
+                                        <span class="icon">
+                                            <img src="./assets/img/currency/rub.png" alt="rub">
+                                        </span>
+                                        <span class="currency">
+                                            rub
+                                        </span>
+                                    </li>
+                                    <li class="calc-input__select-item option">
+                                        <span class="icon">
+                                            <img src="./assets/img/currency/sber.png" alt="sber">
+                                        </span>
+                                        <span class="currency">
+                                            sber
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <input type="text" class="calc-input__input" value="295 860.00">
+                        </div>
+                    </div>
+                    <a href="#" class="order-btn">
+                        Связаться с нами
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
     <script src="./assets/js/script.js"></script>
 </body>
+
 </html>
