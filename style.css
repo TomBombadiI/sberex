@@ -30,7 +30,7 @@
     --accent-color: #A0E720;
 
     --bg-color: #000;
-    --gray-color: #22272B;
+    --gray-color: #22272b;
     --select-color: #2C343A;
 }
 
@@ -168,6 +168,30 @@ body {
     cursor: pointer;
 }
 
+section {
+    margin-bottom: 90px;
+}
+
+.section-title {
+    font-size: 36px;
+    font-weight: 400;
+    font-family: 'SBSansDisplay', sans-serif;
+    display: inline-block;
+    position: relative;
+    line-height: 1;
+    margin-bottom: 47px;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -7px;
+    left: 0;
+    width: 150%;
+    height: 3px;
+    background-color: var(--secondary-color);
+}
+
 @media screen and (max-width: 600px) {
     .order-btn {
         padding: 6px 15px;
@@ -206,6 +230,9 @@ body {
         height: 4px;
     }
 
+    section {
+        margin-bottom: 46px;
+    }
 }
 
 /* #endregion GLOBAL */
@@ -462,8 +489,9 @@ body {
     background-size: contain;
     background-position: center bottom;
     max-width: 1429px;
-    transform: translateY(-50px);
+    transform: translateY(-85px);
     margin: 0 auto;
+    z-index: -1;
 }
 
 .banner__inner {
@@ -680,5 +708,101 @@ body {
     }
 }
 
-
 /* #endregion BANNER */
+
+/* #region CURRENCY */
+
+.currency {}
+
+.currency__inner {
+    padding: 0 52px;
+}
+
+.currency__title {}
+
+
+
+.currency__wrapper {
+    padding: 30px 100px;
+    font-family: 'SBSansDisplay', sans-serif;
+    font-weight: 400;
+    height: 360px;
+    overflow: hidden;
+    position: relative;
+    transition: .3s;
+}
+
+.currency__wrapper::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    transform: translateY(calc(-100% - 42px));
+    left: 0;
+    width: 100%;
+    height: 75px;
+    background: #458F14;
+    filter: blur(21.95px);
+    z-index: 2;
+}
+
+.currency__wrapper.active::after {
+    display: none;
+}
+
+.info-block {}
+
+.green-block {}
+
+.currency-list {
+    display: grid;
+    grid-template-columns: 1fr .5fr .25fr;
+}
+
+.currency-list__column {}
+
+.currency-list__column-title {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.currency-list__body {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.currency-list__row {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.currency-list__row img {
+    width: 24px;
+    height: 13px;
+}
+
+.currency-more {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 42px;
+    flex: 1 1 100%;
+    gap: 12px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+    margin-bottom: 3px;
+    background-color: var(--secondary-color);
+    cursor: pointer;
+}
+
+.currency-more .arrow-dropdown svg line {
+    stroke: var(--primary-color);
+}
+
+/* #endregion CURRENCY */

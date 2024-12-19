@@ -73,3 +73,16 @@ document.addEventListener('click', (event) => {
         })
     }
 });
+
+const currencyWrapper = document.querySelector('.currency__wrapper');
+const currencyMore = document.querySelector('.currency-more');
+
+currencyMore.addEventListener('click', () => {
+    if (currencyWrapper.classList.contains('active')) {
+        currencyWrapper.classList.remove('active');
+        currencyWrapper.style.height = '360px';
+    } else {
+        currencyWrapper.classList.add('active');
+        currencyWrapper.style.height = currencyWrapper.scrollHeight + 46 + 'px';
+    }
+});
